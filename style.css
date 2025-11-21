@@ -1,0 +1,16 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 16px;
+  align-content: normal;
+  justify-content: start;
+}
+
+.grid-wrapper > div {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.grid-wrapper > div > a > img {
+  width: 100%;
+}

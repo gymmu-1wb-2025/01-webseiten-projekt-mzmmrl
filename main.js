@@ -5,7 +5,7 @@ function createNewElement() {
 
   counter = counter + 1;
 
-  newElement.textcontent = "Element " + counter;
+  newElement.textContent = "Element " + counter;
 
   let mainElement = document.querySelector("main");
   mainElement.appendChild(newElement);

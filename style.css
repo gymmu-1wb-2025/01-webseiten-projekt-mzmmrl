@@ -1,14 +1,28 @@
+.title {
+  background-color: white;
+  color: black;
+  font-size: 50pt;
+  text-align: center;
+  border-radius: 2px;
+}
+
 .grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  gap: 16px;
-  align-content: normal;
-  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-wrapper > div {
   border-radius: 2rem;
   overflow: hidden;
+  width: 650px;
+  transition: scale 800ms ease-in-out;
+}
+
+.grid-wrapper > div:hover {
+  scale: 1.1;
 }
 
 .grid-wrapper > div > a > img {

@@ -14,6 +14,33 @@
   justify-content: center;
 }
 
+.layout {
+  display: grid;
+  height: 100dvh;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+
+  & > header {
+    grid-area: header;
+  }
+
+  & > aside {
+    grid-area: aside;
+  }
+
+  & > main {
+    grid-area: main;
+  }
+
+  & > footer {
+    grid-area: footer;
+  }
+}
+
 .grid-wrapper > div {
   border-radius: 2rem;
   overflow: hidden;

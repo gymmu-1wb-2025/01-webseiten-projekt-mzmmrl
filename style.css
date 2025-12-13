@@ -12,8 +12,8 @@
   background-color: rgb(147, 147, 147);
   color: black;
   text-align: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .grid-wrapper {
@@ -31,7 +31,8 @@
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header"
-    "aside main";
+    "aside main"
+    "footer footer";
 
   & > header {
     grid-area: header;

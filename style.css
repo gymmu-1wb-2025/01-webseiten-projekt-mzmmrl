@@ -16,6 +16,11 @@
   justify-content: center;
 }
 
+.nav-title {
+  font-size: 20pt;
+  color: black;
+}
+
 .grid-wrapper {
   display: flex;
   flex-direction: column;

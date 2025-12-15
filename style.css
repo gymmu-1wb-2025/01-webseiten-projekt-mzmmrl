@@ -14,6 +14,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .nav-title {
@@ -30,6 +31,7 @@
 }
 
 .layout {
+  margin: 0;
   display: grid;
   height: 100dvh;
   grid-template-columns: 20% 1fr;
@@ -69,4 +71,8 @@
 
 .grid-wrapper > div > a > img {
   width: 100%;
+}
+
+main {
+  overflow-y: scroll;
 }

@@ -6,14 +6,22 @@
   border-radius: 2px;
 }
 
-.svgtut {
+.root {
+  --section-color: #e6e6f6;
+}
+
+section:nth-child(2n) {
+  background-color: hsl(from var(--section-color) h s calc(1 - 20));
+}
+
+.svg-tut {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   min-height: 100%;
-  background-color: hsl(from var(--section-color) h s calc(1 - 20));
+  background-color: hsl var(--section-color);
 }
 
 .color-list {

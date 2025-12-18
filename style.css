@@ -1,9 +1,11 @@
 .title {
-  background-color: white;
+  background-color: rgb(30, 159, 170);
   color: black;
   font-size: 50pt;
   text-align: center;
   border-radius: 2px;
+  padding: 15pt;
+  margin: 0;
 }
 
 .svg-tut {
@@ -38,12 +40,12 @@
 
 .footer {
   display: flex;
-  font-size: 13pt;
-  background-color: rgb(147, 147, 147);
+  font-size: 17pt;
   color: black;
   text-align: bottom;
   align-items: center;
   justify-content: center;
+  background-color: rgb(30, 159, 170);
   margin: 0;
 }
 

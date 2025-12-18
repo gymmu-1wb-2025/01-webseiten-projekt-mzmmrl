@@ -105,6 +105,12 @@
   width: 100%;
 }
 
+.main {
+  margin: 5pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 main {
   overflow-y: scroll;
 }

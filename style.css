@@ -6,14 +6,6 @@
   border-radius: 2px;
 }
 
-.root {
-  --section-color: #e6e6f6;
-}
-
-section:nth-child(2n) {
-  background-color: hsl(from var(--section-color) h s calc(1 - 20));
-}
-
 .svg-tut {
   display: flex;
   flex-direction: column;
@@ -33,12 +25,6 @@ section:nth-child(2n) {
   cursor: pointer;
 }
 
-.svg-green circle {
-  stroke: green;
-  stroke-width: 2;
-  fill: none;
-}
-
 .svg-red circle {
   fill: red;
 }
@@ -52,10 +38,10 @@ section:nth-child(2n) {
 
 .footer {
   display: flex;
-  font-size: 20pt;
+  font-size: 13pt;
   background-color: rgb(147, 147, 147);
   color: black;
-  text-align: center;
+  text-align: bottom;
   align-items: center;
   justify-content: center;
   margin: 0;

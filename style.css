@@ -8,6 +8,16 @@
   margin: 0;
 }
 
+.Gr {
+  background-color: none;
+  color: black;
+  font-size: 50pt;
+  text-align: center;
+  border-radius: 2px;
+  padding: 15pt;
+  margin: 0;
+}
+
 .svg-tut {
   display: flex;
   flex-direction: column;
@@ -106,7 +116,7 @@
 }
 
 .main {
-  margin: 5pt;
+  margin: 8pt;
   margin-top: 0;
   margin-bottom: 0;
 }

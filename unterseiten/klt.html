@@ -6,6 +6,7 @@
     <title>Kultur</title>
 
     <link rel="stylesheet" href="../style.css">
+    <script src="../main.js" defer></script>
   </head>
   <body class="layout">
     <header>
@@ -36,7 +37,6 @@
     <footer>
       <p class="footer">made by Zimmerli.TechAG</p>
     </footer>
-
     <aside class="aside">
       <nav>
         <ul class="link-family">
@@ -106,7 +106,6 @@
                 y="39"
                 width="24"
                 height="6"
-                fill="transparent"
                 stroke="black"
                 stroke-width="2"
               />
@@ -117,40 +116,35 @@
           </li>
         </ul>
       </nav>
+      <nav>
+        <ul class="color-list">
+          <li onclick="changeColor('rgba(235,231,167,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="yellow" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Gelb</span>
+          </li>
+          <li onclick="changeColor('rgba(235,150,150,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="red" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Rot</span>
+          </li>
+          <li onclick="changeColor('rgba(150,180,235,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="blue" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Blau</span>
+          </li>
+          <li onclick="changeColor('rgba(150,235,180,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="green" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Grün</span>
+          </li>
+        </ul>
+      </nav>
     </aside>
-
-    <section>
-      <aside>
-        <nav class="nav-bottom">
-          <ul class="color-list">
-            <li onclick="changeColor('rgba(235,231,167,0.5)')">
-              <svg viewBox="0 0 100 100" width="1em">
-                <circle class="yellow" cx="50" cy="50" r="35"/>
-              </svg>
-              <span class="nav-title">Gelb</span>
-            </li>
-            <li onclick="changeColor('rgba(235,150,150,0.5)')">
-              <svg viewBox="0 0 100 100" width="1em">
-                <circle class="red" cx="50" cy="50" r="35"/>
-              </svg>
-              <span class="nav-title">Rot</span>
-            </li>
-            <li onclick="changeColor('rgba(150,180,235,0.5)')">
-              <svg viewBox="0 0 100 100" width="1em">
-                <circle class="blue" cx="50" cy="50" r="35"/>
-              </svg>
-              <span class="nav-title">Blau</span>
-            </li>
-            <li onclick="changeColor('rgba(150,235,180,0.5)')">
-              <svg viewBox="0 0 100 100" width="1em">
-                <circle class="green" cx="50" cy="50" r="35"/>
-              </svg>
-              <span class="nav-title">Grün</span>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-    </section>
 
     <main class="main">
       <section id="Klt">

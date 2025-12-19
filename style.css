@@ -142,3 +142,7 @@ main {
 svg > * {
   fill: black;
 }
+
+.transparent {
+  fill: transparent;
+}

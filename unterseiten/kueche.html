@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Küche</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../main.js" defer></script>
+  </head>
+  <body class="layout">
+    <!--der header hat ein h element also titel und ein svg icon hier erzeugt durch viele rectangels und 2 kreise, klassen beschreiben den look-->
+    <header>
+      <h1 class="title">
+        Küche
+        <svg viewBox=" 0 0 100 100" width="1em">
+          <rect x="15" y="55" width="70" height="45"/>
+          <rect x="15" y="43" width="70" height="5"/>
+          <rect
+            class="transparent"
+            x="40"
+            y="39"
+            width="24"
+            height="6"
+            stroke="black"
+            stroke-width="2"
+          />
+          <circle cx="8" cy="56" r="4"/>
+          <circle cx="92" cy="56" r="4"/>
+        </svg>
+      </h1>
+    </header>
+
+    <!--das p tag sagt was im footer stehen soll mit dem stil also klasse wird noch angegeben wie es dargestellt werden soll-->
+    <footer>
+      <p class="footer">made by Zimmerli.TechAG</p>
+    </footer>
+
+    <!--Hier im aside werden viele klassen also ansichten, stiles und layouts angegeben, auch werden hier weitere unterseiten verlinkt und icons gezeichnet vorallem mit dem path tool.-->
+    <!--das path tool funktioniert so, M heisst move to er ist eigentlich der startpunkt dann gibt es noch L das hab ich mir so gemerkt lauf zu ... also von ausgangspunkt zum L punkt laufen und das Z schliesst vom letzen punkt zum ersten die figur -->
+
+    <aside class="aside">
+      <nav>
+        <ul class="link-family">
+          <li>
+            <svg viewBox=" 0 0 100 100" width="1em">
+              <path
+                d="
+                 M10 50
+                 L50 15
+                 L90 50
+                 L80 50
+                 L80 100
+                 L20 100
+                 L20 50
+                 Z
+                 "
+              />
+            </svg>
+            <a class="nav-title" href="../index.html">Main</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 125 100" width="1em">
+              <path
+                d="
+                 M0 100
+                 L15 50
+                 L30 65
+                 L50 20
+                 L75 65
+                 L100 35
+                 L125 100
+                 Z
+                 "
+              />
+            </svg>
+            <a class="nav-title" href="geo.html">Geografie</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 100 100" width="1em">
+              <path
+                d="
+                 M40 100
+                 L40 55
+                 L15 55
+                 L15 35
+                 L40 35
+                 L40 15
+                 L60 15
+                 L60 35
+                 L85 35
+                 L85 55
+                 L60 55
+                 L60 100
+                 Z
+                 "
+              />
+            </svg>
+            <a class="nav-title" href="klt.html">Kultur</a>
+          </li>
+          <li>
+            <svg viewBox=" 0 0 100 100" width="1em">
+              <rect x="15" y="55" width="70" height="45"/>
+              <rect x="15" y="43" width="70" height="5"/>
+              <rect
+                class="transparent"
+                x="40"
+                y="39"
+                width="24"
+                height="6"
+                stroke="black"
+                stroke-width="2"
+              />
+              <circle cx="8" cy="56" r="4"/>
+              <circle cx="92" cy="56" r="4"/>
+            </svg>
+            <a class="nav-title" href="kueche.html">Küche</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="color-list">
+          <li onclick="changeColor('rgba(235,231,167,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="yellow" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Gelb</span>
+          </li>
+          <li onclick="changeColor('rgba(235,150,150,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="red" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Rot</span>
+          </li>
+          <li onclick="changeColor('rgba(150,180,235,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="blue" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Blau</span>
+          </li>
+          <li onclick="changeColor('rgba(150,235,180,0.5)')">
+            <svg viewBox="0 0 100 100" width="1em">
+              <circle class="green" cx="50" cy="50" r="35"/>
+            </svg>
+            <span class="nav-title">Grün</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!--im main ist vorallem text nur wenige klassen und titel-->
+    <main class="main">
+      <section id="Kueche">
+        <h2></h2>
+        <h3>Traditionelle Hauptgerichte</h3>
+        <p>
+          Die traditionellen Hauptgerichte der Bündner Küche sind eng mit dem
+          Leben in den Alpen verbunden. Sie sollten früher vor allem wärmen,
+          lange satt machen und aus Zutaten bestehen, die lokal vorhanden waren.
+          Besonders berühmt sind die Capuns, kleine, von Hand gewickelte
+          Mangoldpäckchen, die mit einem würzigen Spätzliteig, Kräutern und oft
+          mit Salsiz oder Speck gefüllt werden. Sie werden in Bouillon gekocht
+          und mit Rahm serviert, ein echtes Bündner Wohlfühlessen. Ebenfalls
+          beliebt sind die Pizzoccheri, ein Gericht aus Buchweizenteigwaren,
+          Kartoffeln, Wirz und viel geschmolzenem Käse, das besonders in den
+          kälteren Regionen geschätzt wird. Die Bündner Gerstensuppe rundet
+          diese Kategorie ab: ein cremiger, reichhaltiger Eintopf, der in jedem
+          Dorf ein wenig anders schmeckt und bis heute als typisches
+          Wintergericht gilt.
+        </p>
+        <h3>Fleisch- und Wurstspezialitäten</h3>
+        <p>
+          Fleisch spielte in Graubünden seit jeher eine besondere Rolle, da es
+          haltbar gemacht werden musste, um die langen Winter zu überstehen. Das
+          bekannteste Produkt ist zweifellos das Bündnerfleisch. Dieses magere
+          Rindfleisch wird mit Salz und Gewürzen eingerieben und anschliessend
+          über Wochen an der frischen Bergluft getrocknet, wodurch es seinen
+          intensiven Geschmack erhält. Dazu gesellen sich die typischen Bündner
+          Würste wie Salsiz oder Landjäger, die früher wichtige Wegbegleiter für
+          Hirten und Bergbauern waren. Ihr rauchiges, würziges Aroma passt
+          perfekt zu Brot, Käse und einem Glas Bündner Wein.
+        </p>
+        <h3>Süsse Spezialitäten</h3>
+        <p>
+          Auch die süssen Köstlichkeiten Graubündens haben eine lange Tradition.
+          An erster Stelle steht die Bündner Nusstorte, ein reichhaltiges Gebäck
+          voller karamellisierter Baumnüsse, Butter und Zucker. Sie ist weit
+          über die Kantonsgrenzen hinaus bekannt und wird oft als Geschenk aus
+          der Region mitgebracht. Daneben gibt es verschiedene einfachere
+          Alpen-Desserts, die früher aus dem gemacht wurden, was man zur Hand
+          hatte: Mehl, Milch, Honig und manchmal etwas getrocknetes Obst. Diese
+          süssen Gerichte zeigen die Kreativität der Bündner Küche aus einfachen
+          Zutaten entstehen besondere, charaktervolle Spezialitäten, die bis
+          heute gerne in Gasthäusern und Bergrestaurants serviert werden.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

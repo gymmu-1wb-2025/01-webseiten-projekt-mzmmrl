@@ -7,35 +7,51 @@
     <title>Eigene Webseite</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
   </head>
 
+  <!-- hier beginnt der Body in welchem alle element der Website "aufgelistet"/"beschrieben" sind-->
+
   <body>
+    <!--Der Header ist ein teil der Darstellungstabelle, in ihm finden wir ein h element was ein titel ist. dieses element hat eine klasse also viuelle veränderungen-->
+
     <header>
-      <h1>Webseite von ...</h1>
+      <h1 class="Gr">Graubünden</h1>
     </header>
 
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+    <!--In diesem HTML"Block" zeigt drei Bilder untereinander, die jeweils als Links funktionieren. Wenn man auf ein Bild klickt kommt man auf eine andere Unterwebsite (Geografie, Kultur oder Küche).-->
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
+    <div class="grid-wrapper">
+      <div>
+        <a href="./unterseiten/geo.html">
+          <img
+            src="https://artwiese.ch/wp-content/uploads/2020/12/15-09-26-2008-scaled.jpg"
+            alt=""
+          >
+        </a>
+      </div>
+      <div>
+        <a href="./unterseiten/klt.html">
+          <img
+            src="https://www.ausflugsziele.ch/wp-content/uploads/2025/09/20220910135551_IMG_1755.jpg"
+            alt=""
+          >
+        </a>
+      </div>
+      <div>
+        <a href="./unterseiten/kueche.html">
+          <img
+            src="https://d2y8lrt1ygofia.cloudfront.net/6ug9lxqxfhoqo18jomlxeovk470a"
+            alt=""
+          >
+        </a>
+      </div>
+    </div>
 
-      <section>
-        <h2>Unterseiten verlinken</h2>
-        <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
-        </p>
-      </section>
-    </main>
+    <!--Das main ist leer da ich auf dem main dieser website nur auf den look geachtet habe und da ist der text nicht hilfreich -->
 
-    <footer>Meine Webseite</footer>
+    <main></main>
   </body>
 </html>
+
+<!--Ich habe keinen Footer, da ich denke er würde die Ästethik stören-->

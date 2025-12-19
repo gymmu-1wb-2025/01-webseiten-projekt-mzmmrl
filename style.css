@@ -1,5 +1,5 @@
 .title {
-  background-color: rgba(99, 172, 138, 0.7);
+  background-color: rgba(235, 231, 167, 0.5);
   color: black;
   font-size: 50pt;
   text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .aside {
-  background-color: rgba(161, 209, 184, 0.7);
+  background-color: rgba(190, 180, 118, 0.5);
 }
 
 .svg-red circle {
@@ -58,7 +58,7 @@
   text-align: bottom;
   align-items: center;
   justify-content: center;
-  background-color: rgba(99, 172, 138, 0.7);
+  background-color: rgba(235, 231, 167, 0.5);
   margin: 0;
 }
 

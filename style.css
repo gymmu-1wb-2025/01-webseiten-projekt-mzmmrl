@@ -138,3 +138,7 @@ aside ul {
 main {
   overflow-y: scroll;
 }
+
+svg > * {
+  fill: black;
+}

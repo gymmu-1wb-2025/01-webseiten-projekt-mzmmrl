@@ -1,5 +1,5 @@
 .title {
-  background-color: rgba(235, 231, 167, 0.5);
+  background-color: var(--main-color);
   color: black;
   font-size: 50pt;
   text-align: center;
@@ -18,7 +18,12 @@
   margin: 0;
 }
 
-.svg-tut {
+:root {
+  --main-color: rgba(235, 231, 167, 0.5);
+  --nav-color: rgba(190, 180, 118, 0.7);
+}
+
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +38,20 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1em;
   cursor: pointer;
 }
 
+.nav-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+}
+
 .aside {
-  background-color: rgba(190, 180, 118, 0.5);
+  background-color: var(--nav-color);
 }
 
 aside a {
@@ -51,15 +64,26 @@ aside ul {
   padding: 0.2em;
 }
 
-.svg-red circle {
-  fill: red;
-}
-
 .color-list > li {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1em;
+}
+
+.link-family > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.link-family {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .footer {
@@ -69,13 +93,14 @@ aside ul {
   text-align: bottom;
   align-items: center;
   justify-content: center;
-  background-color: rgba(235, 231, 167, 0.5);
+  background-color: var(--main-color);
   margin: 0;
 }
 
 .nav-title {
   font-size: 15pt;
   color: black;
+  margin: 0;
 }
 
 .grid-wrapper {
@@ -147,4 +172,20 @@ svg > * {
 
 .transparent {
   fill: transparent;
+}
+
+.yellow {
+  fill: yellow;
+}
+
+.red {
+  fill: red;
+}
+
+.green {
+  fill: green;
+}
+
+.blue {
+  fill: blue;
 }

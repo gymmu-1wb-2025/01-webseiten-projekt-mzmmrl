@@ -20,7 +20,7 @@
 
 :root {
   --main-color: rgba(235, 231, 167, 0.5);
-  --nav-color: rgba(190, 180, 118, 0.7);
+  --nav-color: rgba(235, 231, 167, 0.7);
 }
 
 .section {
@@ -30,7 +30,7 @@
   justify-content: center;
   padding: 2rem;
   min-height: 100%;
-  background-color: hsl var(--section-color);
+  background-color: var(--main-color);
 }
 
 .color-list {

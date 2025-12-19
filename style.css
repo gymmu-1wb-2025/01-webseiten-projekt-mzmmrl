@@ -8,6 +8,8 @@
   height: 65pt;
 }
 
+/*macht die visuals der titel in allen headern. legt hintergrundfarbe, schriftgrösse, textausrichtung etc. fest.*/
+
 .Gr {
   background-color: none;
   color: black;
@@ -18,10 +20,14 @@
   margin: 0;
 }
 
+/*wird in meinem fall nur für den hauptitel der website benutzt. im grunde eine alternative um einen titel darzustellen.*/
+
 :root {
   --main-color: rgba(235, 231, 167, 0.5);
   --nav-color: rgba(235, 231, 167, 0.7);
 }
+
+/*die root besteht aus Css-Variablen aus denen die hauptfarben der webseite gelesen werden kann/wird. diese variablen können von Javascript geändert werden.*/
 
 .section {
   display: flex;
@@ -33,13 +39,24 @@
   background-color: var(--main-color);
 }
 
+/*macht das layout von gewissen blöcken. zentriert den Inhalt mit Flexbox und gibt der box die hauptfarbe als hintergrund.*/
+
 .color-list {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin-top: auto;
 }
+
+/*stellt die Liste der farbauswahl dar. sie entfernt die aufzählungszeichen, ordnet die punkte untereinander an und zeigt das sie klickbar sind.*/
+
+aside nav:last-child {
+  margin-top: auto;
+}
+
+/*sagt wo das Nav positioniert sein soll. macht abstände damit die farbauswahl nicht direkt am Rand klebt.*/
 
 .nav-bottom {
   display: flex;
@@ -49,19 +66,30 @@
   margin-bottom: 0.2em;
 }
 
+/* steuert die positionierung des untenliegenden navs.macht Abstände,
+damit die Farbauswahl nicht direkt am rand ist */
+
 .aside {
   background-color: var(--nav-color);
+  display: flex;
+  flex-direction: column;
 }
+
+/*Gestaltet das nav. setzt die Navigationsfarbe als Hintergrund.*/
 
 aside a {
   text-decoration: none;
 }
+
+/*keine Unterstreichung der Links im nav mehr.*/
 
 aside ul {
   list-style: none;
   margin: 0.2em;
   padding: 0.2em;
 }
+
+/*macht die Abstände der Listen im nav. Sorgt dafür das das nav nicht zu eng ist.*/
 
 .color-list > li {
   display: flex;
